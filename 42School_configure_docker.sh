@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mkdir -p /goinfre/ysalmi/docker
-rm -rf /Users/ysalmi/Library/Containers/com.docker.docker
-ln -s /goinfre/ysalmi/docker /Users/ysalmi/Library/Containers/com.docker.docker
+mkdir -p /goinfre/$USER/docker
+rm -rf /Users/$USER/Library/Containers/com.docker.docker
+ln -s /goinfre/$USER/docker /Users/$USER/Library/Containers/com.docker.docker

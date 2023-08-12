@@ -31,10 +31,15 @@ then
 fi
 ' > $HOME/bin/stop_tester
 
-chomd +x $HOME/bin/start_tester
-chomd +x $HOME/bin/stop_tester
+chmod +x $HOME/bin/start_tester
+chmod +x $HOME/bin/stop_tester
 
 echo "export PATH='$HOME/bin:$PATH'" >> $HOME/.bashrc
 echo "export PATH='$HOME/bin:$PATH'" >> $HOME/.zshrc
 echo "alias tester='docker exec -it test_box '" >> $HOME/.bashrc
 echo "alias tester='docker exec -it test_box '" >> $HOME/.zshrc
+
+echo "if you use zsh run:
+source ~/.zshrc
+if you use bash run:
+source ~/.bashrc"
