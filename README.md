@@ -2,7 +2,7 @@
 1337 School - C/C++ simple Linux test environment 
 
 ## Requirements
-* Docker installed and running
+* `Docker` installed and running
 
 ## Instalation
 ```sh
