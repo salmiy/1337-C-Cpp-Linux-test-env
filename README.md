@@ -3,6 +3,7 @@
 
 ## Requirements
 * `Docker` installed and running
+  - install `Docker` and before starting it use `42School_configure_docker.sh` to configure it.
 
 ## Instalation
 ```sh
