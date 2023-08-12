@@ -19,7 +19,7 @@ then
 	docker rm -f test_box
 fi
 docker run --name test_box -w /code -v $(pwd):/code -td tester
-' > $HOME/bin/start_server
+' > $HOME/bin/start_tester
 
 
 echo -n '#!/bin/bash
@@ -29,10 +29,10 @@ if [ "$res" == "test_box" ]
 then
 	docker rm -f test_box
 fi
-' > $HOME/bin/stop_server
+' > $HOME/bin/stop_tester
 
-chomd +x $HOME/bin/start_server
-chomd +x $HOME/bin/stop_server
+chomd +x $HOME/bin/start_tester
+chomd +x $HOME/bin/stop_tester
 
 echo "export PATH='$HOME/bin:$PATH'" >> $HOME/.bashrc
 echo "export PATH='$HOME/bin:$PATH'" >> $HOME/.zshrc
